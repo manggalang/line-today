@@ -1,0 +1,144 @@
+.operation-module{
+	margin-top: 24px;
+
+	.bx-title{
+		margin-top: 61px;
+
+		.section-title{
+			font-size: 20px;
+			line-height: 1.11;
+			margin-bottom: 16px;
+			font-weight: 700;
+			color: #202020;
+			text-transform: uppercase;
+		}
+	}
+
+	.list-type-1{
+		padding-left: 0;
+		margin-top: 0;
+
+		li{
+			list-style: none;
+			padding: 0;
+			clear: both;
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			&:hover img{
+				opacity: 0.9;
+			}
+
+			a{
+
+				.list-left{
+					display: inline-block;
+
+					@media only screen and (max-width: 1091px){
+						width: 40%;
+					}
+
+					@media only screen and (max-width: 820px){
+						width: 252px;
+					}
+
+					@media only screen and (max-width: 589px){
+						width: 45%;
+					}
+
+					img{
+						width: 252px;
+						height: 148px;
+						vertical-align: middle;
+						transition: .2s opacity;
+
+						@media only screen and (max-width: 1091px){
+							width: 100%;
+						}
+
+						@media only screen and (max-width: 889px){
+							height: 128px;
+						}
+
+						@media only screen and (max-width: 820px){
+							height: 148px;
+							width: 252px;
+						}
+
+						@media only screen and (max-width: 589px){
+							width: 100%;
+						}
+
+						@media only screen and (max-width: 502px){
+							height: 128px;
+						}
+
+						@media only screen and (max-width: 409px){
+							height: 108px;
+						}
+					}
+				}
+
+				.list-rigth{
+						width: 64%;
+						display: inline-block;
+						vertical-align: middle;
+						position: relative;
+
+						@media only screen and (max-width: 1133px){
+							width: 55%;
+						}
+
+					.list__txt{
+						// width: 437px;
+						margin-left: 22px;
+						vertical-align: middle;
+						text-transform: capitalize;
+
+						@media only screen and (max-width: 375px){
+							margin-left: 10px;
+						}
+
+						.list__content{
+							max-height: 2.444em;
+							font-size: 18px;
+							line-height: 1.25;
+							color: $hitam;
+							margin: 0 auto;
+
+							@media only screen and (max-width: 995px){
+								max-height: 5.444em;
+								font-size: 17px;
+							}
+
+							@media only screen and (max-width: 589px){
+								font-size: 16px;
+							}
+
+							@media only screen and (max-width: 502px){
+								font-size: 15px;
+							}
+
+							@media only screen and (max-width: 375px){
+								font-size: 13px;
+							}
+
+						}
+
+						.list__media{
+							font-size: 14px;
+							margin-top: 4px;
+							color: #b2b2b2;
+							line-height: normal;
+
+							@media only screen and (max-width: 375px){
+								font-size: 12px;
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

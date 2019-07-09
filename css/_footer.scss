@@ -1,0 +1,153 @@
+.footer{
+	width: 100%;
+	padding: 34px 0;
+	background-color: $hitam;
+
+	.inner{
+		position: relative;
+
+		.bx-left{
+			
+			@media only screen and (max-width: 708px){
+				text-align: center;
+			}
+
+			.foot__menu{
+				margin: 0;
+				padding: 0;
+
+				.menu__list{
+					list-style: none;
+					display: inline-block;
+					padding: 0 5px;
+					border-left: 1px solid grey;
+
+					&:first-child{
+						padding-left: 0;
+						border-left: 0px solid grey;
+					}
+
+					&:last-child{
+						@media only screen and (max-width: 346px){
+							display: none;
+						}
+					}
+
+					.menu__link{
+						text-decoration: none;
+						font-size: 15px;
+						color: $abuabu;
+
+						@media only screen and (max-width: 409px){
+							font-size: 12px;
+						}
+					}
+				}
+			}
+
+			.copyright{
+				margin-top: 12px;
+				font-size: 13px;
+				color: $copyright;
+
+				@media only screen and (max-width: 409px){
+					font-size: 11px;
+				}
+			}
+		}
+
+		.bx-right{
+			position: absolute;
+			top: 0;
+			left: 735px;
+			padding-right: 150px;
+
+			@media only screen and (max-width: 1160px){
+				padding-right: 60px;
+	    		left: 70%;
+			}
+
+			@media only screen and (max-width: 889px){
+				left: 65%;
+			}
+
+			@media only screen and (max-width: 708px){
+				display: none;
+			}
+
+			a{
+				text-decoration: none;
+
+				span{
+					color: $abuabu;
+					padding-right: 5px;
+					font-size: 15px;
+				}
+
+				img{
+					height: 17px;
+					width: 17px;
+					padding-left: 5px;
+					position: absolute;
+					top: 2px;
+				}
+			}
+
+			.footcountry{
+				position: absolute;
+				right: -127px;
+				top: 0;
+
+				ul{
+				    margin: 0px;
+				    padding: 0px;
+				    list-style: none;
+
+				     li{
+					    float: left;
+					    width: 116px;
+					    height: 40px;
+					    background-color: $hitam;
+					    border: 1px solid  $abuabu;
+					    line-height: 40px;
+					    text-align: center;
+					    font-size: 15px;
+
+					    &:hover ul{
+					    	display: block;
+					    	cursor: pointer;
+					    }
+
+					    a{
+						    text-decoration: none;
+						    display: block;
+						    transition: .2s ease;
+						    color: $abuabu;
+
+						    &:hover{
+							    color: $putih;
+							    cursor: pointer;
+							}
+						}
+
+						 ul{
+						    display: none;
+						    position: absolute;
+						    bottom: 43px;
+						    z-index: 10;
+
+						    li{
+						    	border: none;
+						    	border-bottom: 1px solid $abuabu;
+
+						    	&:last-child{
+						    		border: none;
+						    	}
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+}
